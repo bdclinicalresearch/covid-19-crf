@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import fire from './config/firebase';
+import Form from './Form'
 
 class Home extends Component{
     constructor(props)
@@ -16,10 +17,7 @@ class Home extends Component{
     {
         return(
             <div>
-            
-               <h4> Data retrieved from patient record</h4>
-               <h4> COVID-19 CRF</h4>
-               
+               <Form/>
                <button onClick={this.logout}>Logout</button>
             </div>
         )
